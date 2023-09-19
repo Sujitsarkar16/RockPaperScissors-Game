@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock | Paper | Scissor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper-home">
+      <main>
+        <h1 class="title-main">
+          <span class="word-one">Yo,</span> Let's play<br />Rock
+
+          <span class="word-two">Paper </span><br />
+          Scissors
+        </h1>
+        <button id="btn-start" type="button">
+          Let's<br />
+          Begin
+        </button>
+      </main>
+      <figure>
+        <img src="./aside.png" alt="hero-img" />
+      </figure>
+    </div>
+    <button id="btn-rules">Rules</button>
+
+    <!-- ....................................................................................................... -->
+
+    <article id="popup-rules">
+      <li>
+        Rock-paper-scissors is a quick win-loose game that is often used to
+        determine who will go first or who will win some other small privilege.
+      </li>
+      <br />
+      <li><b>Rock wins over scissors</b></li>
+      <li><b>Scissors wins over paper</b></li>
+      <li><b>Paper wins over rock</b></li>
+      <li>If both players show the same sign, it’s a tie</li>
+      <svg
+        class="btn-close"
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width="100"
+        height="100"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M16.7,15.3c0.4,0.4,0.4,1,0,1.4C16.5,16.9,16.3,17,16,17	s-0.5-0.1-0.7-0.3L12,13.4l-3.3,3.3C8.5,16.9,8.3,17,8,17s-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l3.3-3.3L7.3,8.7	c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l3.3,3.3l3.3-3.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L13.4,12L16.7,15.3z"
+        ></path>
+      </svg>
+    </article>
+    <!-- /*------------------------------------------------------------------------------------------------*/ -->
+
+    <div id="play-station">
+      <section class="score-boards">
+        <div class="player score">
+          <h3 id="my-score">Your <br />Score</h3>
+          <h1 id="player-score">0</h1>
+        </div>
+        <div class="computer score">
+          <h3 id="pc-score">
+            Computer<br />
+            Score
+          </h3>
+          <h1 id="computer-score">0</h1>
+        </div>
+      </section>
+    </div>
+    <button id="btn-winpage">Next</button>
+    <!-- ----- --------------------------------------------------------------------------------------->
+    <h2 class="title">ROCK PAPER SCISSORS</h2>
+    <div id="hands">
+      <div class="btn-rock hand" onclick="userChoice('rock')">
+        <img src="./Rock.png" alt="rock-img" />
+      </div>
+      <div class="btn-paper hand" onclick="userChoice('paper')">
+        <img src="./Paper.png" alt="rock-img" />
+      </div>
+      <div class="btn-scissors hand" onclick="userChoice('scissors')">
+        <img src="./Scissors.png" alt="rock-img" />
+      </div>
+    </div>
+    <!-- ....................................................................................................... -->
+    <div class="Arena">
+      <div class="userhand">
+        <h2>Your Choice</h2>
+        <div class="userimagediv">
+          <img id="userpickedimage" src="./Paper.png" />
+        </div>
+      </div>
+      <div class="judge">
+        <div class="decesion"><h2>You Win</h2></div>
+        <button class="continue" onclick="restartGame()">Play Again</button>
+      </div>
+      <div class="computerhand">
+        <h2>Computer's Choice</h2>
+        <div class="computerimagediv">
+          <img id="computerPickedImage" src="./Rock.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
